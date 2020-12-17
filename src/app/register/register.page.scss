@@ -1,0 +1,29 @@
+* {
+    font-weight: 300;
+}
+
+ion-text {
+    // position: static;
+    top: 25%;
+    text-align: center;
+
+    h1 {
+        font-size: 32px;
+        color: black;
+        // margin-bottom: 0px !important;
+    }
+
+    p {
+        font-size: 12px;
+        color: #696969;
+    }
+}
+
+ion-content{
+
+    --ion-background-color:#e66370;
+}
+
+ion-card {
+    --ion-background-color: white;
+}

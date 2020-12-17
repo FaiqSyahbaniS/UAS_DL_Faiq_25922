@@ -1,0 +1,20 @@
+<ion-header >
+  <ion-toolbar color="light" mode="ios">
+    <ion-title>
+      Add New Friend
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="main/profile"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <ion-item>
+      <ion-label class="text-label" position="floating">Email</ion-label>
+      <ion-input class="text-input" type="text" ngModel name="email" required></ion-input>
+    </ion-item>
+    <ion-button color="merah" type="submit" expand="block" >Add</ion-button>
+  </form>
+</ion-content>

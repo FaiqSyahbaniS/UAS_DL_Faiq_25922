@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="light">
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+    <div class="ion-padding ion-text-center">
+        <img style="border-radius: 50% ;" class="image-center" [src]="imgSrc">
+        
+        <ion-buttons class="btn-upload" for="fileUp">
+            <ion-icon name="cloud-upload"></ion-icon> 
+        </ion-buttons>
+        <ion-input type="file" accept="image/*" (change)="changeListener($event)" ngModel name="foto" class="fileUp"></ion-input>     
+        <h3 class="text-black" >{{ user?.namadepan }} {{ user?.namabelakang }}</h3>
+    <p>{{ user?.nim }}</p>
+
+    <ion-button color="merah" class="bulat" routerLink="/main/profile/settings"><ion-icon name="settings"></ion-icon></ion-button>
+    <ion-button color="merah" class="bulat" (click)="logout()" ><ion-icon name="log-out"></ion-icon></ion-button>
+    </div>
+  
+    <h3 class="ion-padding-start"> Feeds</h3>
+    <ion-card>
+      <ion-card-content>
+          <p>Ini adalah feeds</p>
+          <p>Ini adalah feeds</p>
+      </ion-card-content>
+    </ion-card>
+    
+
+
+</ion-content>

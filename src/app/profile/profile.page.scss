@@ -1,0 +1,39 @@
+.photo-profile{
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 85px;
+    height:85px;
+    border-radius: 50%;
+  }
+
+
+.image-center{
+    margin:0 auto;
+}
+
+ion-content img{
+
+    display: block;
+    border-radius: 50% ;
+    width: 240px ;
+    height: 240px ;
+    border: 5px solid #dc4c5a; 
+}
+
+// ion-content{
+//     --ion-background-color: #e3e3e3;
+// }
+
+
+// ion-card{
+//     --background: #ffffff;
+// }
+
+.text-black {
+    color: #000000 !important;
+}
+
+.bulat {
+  --border-radius: 100px;
+}

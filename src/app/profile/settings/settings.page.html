@@ -1,0 +1,41 @@
+<ion-header >
+  <ion-toolbar color="light" mode="ios">
+    <ion-title>
+      Account Settings
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="main/profile"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="text-pengaturan">
+      <ion-item>
+        <ion-label class="text-label" position="floating">Nama Depan</ion-label>
+        <ion-input value="{{ user?.namadepan }}" class="text-input" type="text" ngModel name="namadepan"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="text-label" position="floating">Nama Belakang</ion-label>
+        <ion-input value="{{ user?.namabelakang }}" class="text-input" type="text" ngModel name="namabelakang"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="text-label" position="floating">NIM</ion-label>
+        <ion-input value="{{ user?.nim }}" class="text-input" type="text" ngModel name="nim"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="text-label" position="floating">Email</ion-label>
+        <ion-input value="{{ userEmail }}" disabled="true"></ion-input>
+      </ion-item>
+  
+      <div class="btn-pengaturan">
+        <ion-button color="merah" expand="block" slot="end" type ="submit" class="btn-submit">Save Changes</ion-button>
+      </div>
+    </div>
+  </form>
+
+</ion-content>

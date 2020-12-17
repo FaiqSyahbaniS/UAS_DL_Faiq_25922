@@ -1,0 +1,29 @@
+<!-- <ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Maps
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-button color="merah" expand="block">Check in</ion-button> -->
+  <div #map id="map">
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="ion-padding" (click)="showCurrentLocation()">
+    <ion-fab-button color="merah">
+      <ion-icon name="locate-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" class="ion-padding">
+    <ion-fab-button color="merah">
+      <ion-icon name="walk"></ion-icon>
+      <!-- <ion-label>Check In</ion-label> -->
+    </ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-input class="text-input" type="text" name="checkin" ngModel placeholder="Location name"></ion-input>
+    </ion-fab-list>
+  </ion-fab>
+  
+</ion-content>
