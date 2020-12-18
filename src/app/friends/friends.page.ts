@@ -56,8 +56,8 @@ export class FriendsPage {
             let j = 0;
             for(let i = 0; i < this.userList.length;){
               if(this.userList[i].email == this.userFriend[j].email){
-                this.friendList[j] = this.userData[j];
-                this.resetFriend[j] = this.userData[j];
+                this.friendList[j] = this.userList[i];
+                this.resetFriend[j] = this.userList[i];
                 console.log(this.friendList[j]);
                 i=0;
                 j++;
